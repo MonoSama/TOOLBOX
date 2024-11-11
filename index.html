@@ -8,6 +8,79 @@
     <!-- Agregamos Font Awesome para el ícono de la lupa -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .schedule-card {
+            border: none;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .schedule-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .schedule-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .schedule-text {
+            flex: 1;
+            padding-right: 15px;
+        }
+        .schedule-text h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .schedule-text p {
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+        }
+        .schedule-list {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #333;
+        }
+        .schedule-list li {
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+        .schedule-list li span {
+            margin-right: 6px;
+            font-size: 1rem;
+        }
+        .image-wrapper {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-wrapper img {
+            max-width: 60%; /* Tamaño para pantallas grandes */
+        }
+
+        @media (max-width: 768px) {
+            .image-wrapper img {
+                max-width: 100%; /* Tamaño para pantallas móviles */
+            }
+        }
+
+        .btn-modern {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 20px;
+            padding: 6px 15px;
+            font-size: 0.85rem;
+            transition: background-color 0.3s;
+        }
+        .btn-modern:hover {
+            background-color: #0056b3;
+        }
+    </style>
 
 </head>
 <body>
@@ -139,9 +212,65 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+            <div class="container">
+                <h2 class="text-primary mb-4">Carreras relacionadas</h2>
+        
+                <!-- Tarjeta de Ingeniero QA -->
+                <div class="schedule-card">
+                    <div class="schedule-section">
+                        <div class="schedule-text">
+                            <h2 class="mb-2">Ingeniero QA</h2>
+                            <p class="text-muted">El Ingeniero QA se encarga de garantizar la calidad de los productos de software a través de pruebas rigurosas, asegurando que cumplan con los estándares y requerimientos antes de su lanzamiento.</p>
+                            <ul class="schedule-list list-unstyled">
+                                <li><span class="text-danger">•</span> Viernes de 18:00 a 21:45 hrs.</li>
+                                <li><span class="text-warning">•</span> Sábados de 07:00 a 18:00 hrs.</li>
+                            </ul>
+                            <button class="btn-modern mt-3">Obtener más información</button>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/carreras_1.png" alt="Persona con laptop" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tarjeta de Ingeniero de Software -->
+                <div class="schedule-card">
+                    <div class="schedule-section">
+                        <div class="schedule-text">
+                            <h2 class="mb-2">Ingeniero de Software</h2>
+                            <p class="text-muted">El Ingeniero de Software diseña, desarrolla y mantiene aplicaciones y sistemas complejos, aplicando las mejores prácticas de codificación y metodologías ágiles.</p>
+                            <ul class="schedule-list list-unstyled">
+                                <li><span class="text-success">•</span> Lunes a jueves de 18:00 a 22:00 hrs.</li>
+                                <li><span class="text-primary">•</span> Sábados de 08:00 a 14:00 hrs.</li>
+                            </ul>
+                            <button class="btn-modern mt-3">Obtener más información</button>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/carreras_2.png" alt="Persona programando" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Tarjeta de Especialista en Ciberseguridad -->
+                <div class="schedule-card">
+                    <div class="schedule-section">
+                        <div class="schedule-text">
+                            <h2 class="mb-2">Especialista en Ciberseguridad</h2>
+                            <p class="text-muted">El Especialista en Ciberseguridad protege la infraestructura de TI de una organización, detectando y mitigando amenazas y asegurando la integridad de los datos.</p>
+                            <ul class="schedule-list list-unstyled">
+                                <li><span class="text-danger">•</span> Miércoles y viernes de 17:00 a 21:30 hrs.</li>
+                                <li><span class="text-warning">•</span> Sábados de 09:00 a 17:00 hrs.</li>
+                            </ul>
+                            <button class="btn-modern mt-3">Obtener más información</button>
+                        </div>
+                        <div class="image-wrapper">
+                            <img src="assets/carreras_3.png" alt="Persona con candado digital" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
   <!-- Formulario de email en la parte inferior, alineado a la izquierda -->
 <div class="bg-white p-4 shadow-sm rounded mt-4" style="max-width: 600px;" >
     <p class="mb-2">¿Quieres recibir más información? Déjanos tu email:</p>
