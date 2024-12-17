@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Herramientas de Planificación, Desarrollo, Modelado y Seguimiento para la Implementación del Software</title>
+    <title>Metodologías Ágiles en el Desarrollo de Software</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <style>
-        /* Estilos personalizados para mapa mental */
         .map-mental {
             display: flex;
             flex-wrap: wrap;
@@ -64,7 +63,6 @@
 <!-- Navbar (menú superior en móviles) -->
 <nav class="navbar navbar-dark bg-dark d-md-none">
     <div class="container-fluid">
-        <!-- Logo en el menú superior (móviles) -->
         <a class="navbar-brand" href="#">
             <img src="../assets/logo.png" alt="Logo" class="img-fluid" style="max-width: 150px;">
         </a>
@@ -101,76 +99,87 @@
     <div class="container-fluid p-4">
         <a href="../index.html" class="btn btn-secondary mb-3">Regresar</a>
 
-        <h2 class="text-primary mb-4">Herramientas de Planificación, Desarrollo, Modelado y Seguimiento para la Implementación del Software</h2>
+        <h2 class="text-primary mb-4">Metodologías Ágiles en el Desarrollo de Software</h2>
 
-        <p>Las herramientas de planificación y seguimiento son fundamentales para gestionar proyectos de software de manera efectiva. En este artículo, exploramos algunas de las principales herramientas que se utilizan para asegurar la correcta implementación de proyectos en el ámbito del desarrollo de software:</p>
+        <p>Las metodologías ágiles han revolucionado la manera en que se gestionan y desarrollan proyectos de software. Aquí exploramos las principales metodologías que permiten a los equipos trabajar de manera más flexible y efectiva:</p>
 
-        <!-- Herramientas destacadas -->
+        <!-- Metodologías destacadas -->
         <div class="map-mental">
-            <!-- JIRA -->
+            <!-- Scrum -->
             <div class="card-iso">
                 <div class="card-body">
                     <i class="bi bi-kanban icon"></i>
-                    <h5 class="card-title">JIRA</h5>
-                    <p class="card-text">Gestión de proyectos ágil</p>
-                    <button class="btn btn-info" data-bs-toggle="collapse" href="#jiraInfo" role="button" aria-expanded="false" aria-controls="jiraInfo">
+                    <h5 class="card-title">Scrum</h5>
+                    <p class="card-text">Gestión de proyectos iterativos</p>
+                    <button class="btn btn-info" data-bs-toggle="collapse" href="#scrumInfo" role="button" aria-expanded="false" aria-controls="scrumInfo">
                         Ver más
                     </button>
-                    <div class="collapse" id="jiraInfo">
-                        <p class="mt-2">JIRA es una de las herramientas más utilizadas en el desarrollo ágil de software. Permite la gestión de tareas, incidencias, planificación de sprints, y seguimiento de proyectos. Es muy popular entre equipos que implementan metodologías ágiles como Scrum y Kanban.</p>
-                        <p><strong>Ejemplo en la vida real:</strong> En una empresa de desarrollo de software, JIRA se utiliza para gestionar un proyecto de creación de una nueva aplicación móvil. Cada tarea (como desarrollo de la interfaz de usuario, integración de la API, y pruebas) se asigna a los miembros del equipo, y el progreso se sigue mediante sprints, con las tareas moviéndose de "Pendiente" a "En Proceso" y finalmente a "Completado". Esto permite al equipo tener una visión clara del progreso y detectar posibles cuellos de botella a tiempo.</p>
+                    <div class="collapse" id="scrumInfo">
+                        <p class="mt-2">Scrum es una de las metodologías ágiles más populares. Se basa en sprints, reuniones diarias y roles bien definidos (como Scrum Master y Product Owner) para gestionar proyectos de manera iterativa y colaborativa.</p>
+                        <p><strong>Ejemplo en la vida real:</strong> Un equipo de desarrollo utiliza Scrum para crear un sitio web. Cada sprint dura dos semanas, durante las cuales trabajan en funcionalidades específicas. Las reuniones diarias permiten al equipo sincronizarse y resolver problemas rápidamente.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Trello -->
+            <!-- Kanban -->
             <div class="card-iso">
                 <div class="card-body">
                     <i class="bi bi-columns icon"></i>
-                    <h5 class="card-title">Trello</h5>
-                    <p class="card-text">Tableros visuales de gestión</p>
-                    <button class="btn btn-info" data-bs-toggle="collapse" href="#trelloInfo" role="button" aria-expanded="false" aria-controls="trelloInfo">
+                    <h5 class="card-title">Kanban</h5>
+                    <p class="card-text">Flujo de trabajo visual</p>
+                    <button class="btn btn-info" data-bs-toggle="collapse" href="#kanbanInfo" role="button" aria-expanded="false" aria-controls="kanbanInfo">
                         Ver más
                     </button>
-                    <div class="collapse" id="trelloInfo">
-                        <p class="mt-2">Trello es una herramienta de gestión de proyectos visual y fácil de usar. Utiliza tableros, listas y tarjetas para organizar tareas, lo que facilita el seguimiento y la colaboración en proyectos. Es especialmente útil para equipos pequeños o proyectos personales.</p>
-                        <p><strong>Ejemplo en la vida real:</strong> Un equipo de marketing utiliza Trello para planificar una campaña publicitaria. Crean un tablero llamado "Campaña 2024", con listas para cada fase del proyecto: "Ideas", "En Proceso", "Revisión" y "Finalizado". Cada miembro del equipo añade tarjetas con tareas específicas, como diseño de anuncios, creación de contenido y envío a medios, que se mueven a medida que se completan.</p>
+                    <div class="collapse" id="kanbanInfo">
+                        <p class="mt-2">Kanban utiliza un enfoque visual para gestionar flujos de trabajo. Las tareas se organizan en un tablero con columnas como "Por hacer", "En proceso" y "Completado", facilitando el seguimiento del progreso en tiempo real.</p>
+                        <p><strong>Ejemplo en la vida real:</strong> Un equipo de soporte técnico usa Kanban para gestionar tickets de clientes. Cada ticket pasa por las columnas del tablero a medida que se resuelve, permitiendo priorizar y optimizar el tiempo de respuesta.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- GitHub -->
+            <!-- Extreme Programming (XP) -->
             <div class="card-iso">
                 <div class="card-body">
-                    <i class="bi bi-github icon"></i>
-                    <h5 class="card-title">GitHub</h5>
-                    <p class="card-text">Control de versiones y colaboración</p>
-                    <button class="btn btn-info" data-bs-toggle="collapse" href="#githubInfo" role="button" aria-expanded="false" aria-controls="githubInfo">
+                    <i class="bi bi-code-slash icon"></i>
+                    <h5 class="card-title">Extreme Programming (XP)</h5>
+                    <p class="card-text">Desarrollo centrado en calidad</p>
+                    <button class="btn btn-info" data-bs-toggle="collapse" href="#xpInfo" role="button" aria-expanded="false" aria-controls="xpInfo">
                         Ver más
                     </button>
-                    <div class="collapse" id="githubInfo">
-                        <p class="mt-2">GitHub es una plataforma de desarrollo colaborativo basada en Git. Permite a los equipos de desarrollo gestionar versiones de código, colaborar en proyectos, realizar revisiones de código y automatizar flujos de trabajo. Es esencial para el control de versiones en proyectos de software.</p>
-                        <p><strong>Ejemplo en la vida real:</strong> En una empresa que desarrolla una plataforma web, GitHub es utilizado para gestionar el código fuente. Los desarrolladores crean ramas para cada nueva característica, como "autenticación de usuario", y realizan revisiones de código mediante pull requests. Cuando una característica está lista, se fusiona con la rama principal para su despliegue.</p>
+                    <div class="collapse" id="xpInfo">
+                        <p class="mt-2">XP enfatiza la calidad del software mediante prácticas como programación en parejas, revisiones de código y desarrollo guiado por pruebas (TDD). Es ideal para proyectos con requisitos cambiantes.</p>
+                        <p><strong>Ejemplo en la vida real:</strong> Un equipo desarrolla una aplicación móvil utilizando TDD. Escriben pruebas antes de desarrollar cada funcionalidad, asegurando un código robusto y libre de errores.</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Asana -->
+            <!-- Lean Development -->
             <div class="card-iso">
                 <div class="card-body">
-                    <i class="bi bi-clipboard-check icon"></i>
-                    <h5 class="card-title">Asana</h5>
-                    <p class="card-text">Gestión de proyectos y tareas</p>
-                    <button class="btn btn-info" data-bs-toggle="collapse" href="#asanaInfo" role="button" aria-expanded="false" aria-controls="asanaInfo">
+                    <i class="bi bi-lightbulb icon"></i>
+                    <h5 class="card-title">Lean Development</h5>
+                    <p class="card-text">Optimización del proceso</p>
+                    <button class="btn btn-info" data-bs-toggle="collapse" href="#leanInfo" role="button" aria-expanded="false" aria-controls="leanInfo">
                         Ver más
                     </button>
-                    <div class="collapse" id="asanaInfo">
-                        <p class="mt-2">Asana es una herramienta de gestión de proyectos que ayuda a los equipos a organizar el trabajo, realizar seguimientos y colaborar. Permite asignar tareas, establecer fechas de vencimiento y visualizar el progreso mediante listas y cronogramas.</p>
-                        <p><strong>Ejemplo en la vida real:</strong> Un equipo de desarrollo de software utiliza Asana para gestionar las tareas de un proyecto de actualización de software. Cada tarea se asigna a un miembro del equipo y se establece una fecha de entrega. El equipo revisa semanalmente el progreso mediante un informe visual que muestra las tareas completadas, en progreso y pendientes.</p>
+                    <div class="collapse" id="leanInfo">
+                        <p class="mt-2">Lean Development busca eliminar desperdicios en el proceso de desarrollo y maximizar el valor entregado al cliente. Utiliza principios como la mejora continua y la entrega rápida de funcionalidades.</p>
+                        <p><strong>Ejemplo en la vida real:</strong> Una startup utiliza Lean Development para iterar rápidamente en su producto. Lanza versiones mínimas viables (MVP) para recibir retroalimentación de los usuarios y mejorar continuamente.</p>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Sección adicional: Ceremonias ágiles en Scrum -->
+        <h3 class="mt-5 text-primary">Ceremonias Ágiles en Scrum</h3>
+        <p>Scrum incluye varias ceremonias que estructuran el proceso de trabajo y promueven la colaboración del equipo. Estas ceremonias son:</p>
+        <ul>
+            <li><strong>Planificación del Sprint:</strong> Se define el objetivo del sprint y las tareas que se realizarán.</li>
+            <li><strong>Reuniones Diarias:</strong> Breves reuniones para sincronizar al equipo y abordar impedimentos.</li>
+            <li><strong>Revisión del Sprint:</strong> Se presentan los entregables al final del sprint y se recopila retroalimentación.</li>
+            <li><strong>Retrospectiva del Sprint:</strong> Se reflexiona sobre lo que funcionó bien y las áreas de mejora.</li>
+        </ul>
+
     </div>
 </div>
 
